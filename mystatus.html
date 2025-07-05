@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Food Donation Status</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+ <nav>
+    <img src="your-logo.png" alt="Logo" />
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="signup.html">Register</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="donate.html">Donate(D)</a></li>
+      <li><a href="mystatus.html">Dashboard(D)</a></li>
+      <li><a href="donations.html">Donations(R)</a></li>
+      <li><a href="about.html">About</a></li>
+      
+    </ul>
+  </nav>
+<body>
+<section>
+  <h1>My Food Donation Status</h1>
+  </section>
+<div class="donation-section">
+  
+  <h2>Food Item: Cooked Rice</h2>
+  <ul>
+    <li><strong>Quantity:</strong> 10 Kg</li>
+    <li><strong>Category:</strong> Cooked</li>
+    <li><strong>Date Donated:</strong> 2025-06-16</li>
+  </ul>
+
+  
+  <p><strong>NGOs That Applied:</strong></p>
+  <ol>
+    <li><a href="mystatus2.html">Helping Hands NGO</a></li>
+    <li>Meal Mission</li>
+    <li>Mission FeedHope</li>
+  </ol>
+<p>Select one of the listed NGOs to assign the food donation</p>
+</div>  
+
+<div class="donation-section">
+  <h2>Food Item: Milk Carton</h2>
+  <ul>
+    <li><strong>Quantity:</strong> 10 L</li>
+    <li><strong>Category:</strong> Fresh</li>
+    <li><strong>Date Donated:</strong> 2025-06-16</li>
+  </ul>
+
+  
+  <p><strong>NGOs That Applied:</strong></p>
+  <ol>
+    <li>Helping Hands NGO</li>
+    <li><a href="mystatus3.html">Meal Mission</a></li>
+    <li>Mission FeedHope</li>
+  </ol>
+  <p>Select one of the listed NGOs to assign the food donation</p>
+</div>
+
+
+<script>
+  // Get current page filename (e.g., "donate.html")
+  const currentPage = window.location.pathname.split("/").pop();
+
+  // Loop through each link in the nav and highlight the active one
+  document.querySelectorAll("nav a").forEach(link => {
+    const linkPage = link.getAttribute("href");
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+</script> 
+ <footer>
+    &copy; 2025 Food Donation Platform | Follow us on social media
+  </footer>
+</body>
+</html>
