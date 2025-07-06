@@ -134,6 +134,13 @@ section p {
   margin: 10px auto 30px;
 }
 
+section h1 {
+  font-size: 36px;
+  color: #965213;
+  text-align: center;
+  font-weight: 700;
+}
+
 .card {
   background: #fffaf3;
   border-left: 6px solid #f3be62;
@@ -279,31 +286,16 @@ footer {
   color: #333;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .donation-section {
   background: #fffdf5;
   padding: 25px 30px;
-  margin: 10px auto 30px; /* reduced top margin */
+  margin: 10px auto 30px;
   max-width: 700px;
   border-left: 6px solid #f3be62;
   border-radius: 12px;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
   color: #333;
 }
-
 
 .donation-section h2 {
   color: #546c3c;
@@ -343,12 +335,6 @@ footer {
   text-decoration: underline;
 }
 
-section h1 {
-  font-size: 36px;
-  color: #965213;
-  text-align: center;
-  font-weight: 700;
-}
 /* 📱 Responsive Fixes for Mobile Devices */
 @media (max-width: 768px) {
   nav {
@@ -404,4 +390,3 @@ section h1 {
     padding: 15px;
   }
 }
-
