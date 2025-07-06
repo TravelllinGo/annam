@@ -134,13 +134,6 @@ section p {
   margin: 10px auto 30px;
 }
 
-section h1 {
-  font-size: 36px;
-  color: #965213;
-  text-align: center;
-  font-weight: 700;
-}
-
 .card {
   background: #fffaf3;
   border-left: 6px solid #f3be62;
@@ -286,16 +279,31 @@ footer {
   color: #333;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .donation-section {
   background: #fffdf5;
   padding: 25px 30px;
-  margin: 10px auto 30px;
+  margin: 10px auto 30px; /* reduced top margin */
   max-width: 700px;
   border-left: 6px solid #f3be62;
   border-radius: 12px;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
   color: #333;
 }
+
 
 .donation-section h2 {
   color: #546c3c;
@@ -335,23 +343,15 @@ footer {
   text-decoration: underline;
 }
 
-/* 📱 Responsive Fixes for Mobile Devices */
+section h1 {
+  font-size: 36px;
+  color: #965213;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* 📱 Home Page Mobile Optimization */
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  nav ul li {
-    margin: 8px 0;
-  }
-
   .header-content {
     flex-direction: column;
     text-align: center;
@@ -363,7 +363,11 @@ footer {
   }
 
   .header-text h1 {
-    font-size: 28px;
+    font-size: 26px;
+  }
+
+  .header-text p {
+    font-size: 14px;
   }
 
   section {
@@ -372,17 +376,21 @@ footer {
 
   .card {
     width: 90%;
-    padding: 20px;
+    margin: 15px auto;
   }
 
-  .about-row {
+  nav {
     flex-direction: column;
-    padding: 0 10px;
+    align-items: flex-start;
   }
 
-  form {
-    padding: 15px;
-    width: 90%;
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 10px 0;
   }
 
   footer {
